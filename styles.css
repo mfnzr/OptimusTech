@@ -1,0 +1,310 @@
+:root {
+    --branco: #ffffff;
+    --cinza-escuro: #3A404E;
+    --cinza-claro: #667085;
+    --vermelho: #8E2424;
+    --fonte-principal: "Inter";
+    --vermelho-hover: #b34242;
+    --text-color: #8E2424;
+    --main-color: #667085;
+    --preto: #101828;
+    --borda: #EAECF0;
+    --background-depoimentos: #C31919;
+    --background-rodape: #F9FAFB;
+    --borda-email: #D0D5DD;
+    --direitos-rodape: #98A2B3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background-color: var(--branco);
+    height: 100vw;
+}
+
+img {
+    margin-left: 10em;
+    margin-right: 0.5em;
+}
+
+.titulo {
+    font-weight: 650;
+    margin-right: 10em;
+    color: var(--cinza-escuro);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+    margin-left: 15%;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--cinza-claro);
+    margin-right: 1em;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+button {
+    padding: 0.8em 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    background: none;
+    color: var(--cinza-claro);
+    font-size: 1em;
+    margin-left: 15em;
+    cursor: pointer;
+}
+
+button#signUp {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+button:hover {
+    color: var(--cinza-escuro);
+}
+
+button#signUp:hover {
+    background-color: var(--vermelho-hover);
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    color: var(--text-color);
+    margin-top: 6em;
+    margin-bottom: 1.5em;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ask {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer {
+    color: var(--main-color);    
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 1px 11px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metricas-container {
+    display: flex;
+    margin: 6em 10em 6em 15em;    
+}
+
+.numeros {
+    font-size: 60px;
+    color: var(--text-color);
+    padding: 0.3em 2em 0.3em 0;
+}
+
+.subtitulo {
+    color: var(--preto);
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+}
+
+.subtitulo-texto {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 1em;
+}
+
+.talentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vagas-abertas {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    border: 1px transparent;
+    border-radius: 20px;
+    background-color: rgba(142, 36, 36, 0.05);
+    padding: 0.3em 1em;
+    margin-bottom: 1em;
+}
+
+.talentos-titulo {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--preto);
+    padding: 0.3em;
+    margin-bottom: 1em;
+}
+
+.talentos-texto {
+    color: var(--main-color);
+    font-size: 20px;
+    padding: 0.3em;
+    margin-bottom: 2em;
+}
+
+.talentos-img {
+    height: 25vw;
+    margin-right: 10em;
+}
+
+.vaga {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30em;
+    margin-top: 4em
+}
+
+.vaga-titulo {
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
+}
+
+.vaga-disponivel {
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 2em 40em 2em 2em;
+    margin-bottom: 1.5em;
+}
+
+.vaga-disponivel-titulo {
+    color: var(--preto);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.vaga-disponivel-informações {
+    color: var(--main-color);
+    font-size: 16px;
+    padding-top: 2em;
+    padding-right: 1em;
+}
+
+.vaga-disponivel-informações span:first-child {
+    margin-right: 1.5em; 
+}
+
+.depoimentos {
+    background-color: rgba(195, 25, 25, 3%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6em 7em;
+    padding: 4em;
+}
+
+.depoimentos-titulo {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1em;
+
+}
+
+.depoimentos-texto {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--preto);
+}
+
+.depoimento-img {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    margin-right: 8vw;
+    margin-bottom: 1em;
+}
+
+.depoimento-nome {
+    font-size: 16px;
+    color: var(--preto);
+    margin-bottom: 0.5em;
+}
+
+.depoimento-função {
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-rodape);
+    padding: 6em;
+}
+
+.titulo-rodape {
+    color: var(--preto);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 0.6em;
+}
+
+.texto-rodape {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2.5em;
+}
+
+.email-button {
+    margin-bottom: 2em;
+}
+
+#email {
+    padding: 0.8em 8em 0.8em 0.5em;
+    border: solid 1px var(--borda-email);
+    border-radius: 8px;
+    margin-right: none;
+    font-size: 16px;
+}
+
+#button {
+    margin: 0 0 0 1em;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 0.8em 1em;
+}
+
+#button:hover {
+    background-color: var(--vermelho-hover);
+}
+
+.direitos-rodape {
+    color: var(--direitos-rodape);
+    font-size: 16px;
+}
